@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0ae91b03-c2d8-432b-8ab0-705b6637d5f9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="saberhosneydev &lt;ssaber277@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="ee7cc1c0-5a4e-4668-ab51-570b4bdc866b" />
+  </component>
+  <component name="ProjectId" id="1hV47xIYOQqMAP3ZCRhA4tkw3FY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.4.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.10.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build/components/Case.js" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="ts.external.directory.path" value="C:\Users\Saber\AppData\Roaming\npm\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Case.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="build/components/Case.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Saber\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ae91b03-c2d8-432b-8ab0-705b6637d5f9" name="Default Changelist" comment="" />
+      <created>1600082761742</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600082761742</updated>
+      <workItem from="1600082764205" duration="6957000" />
+      <workItem from="1600125349975" duration="9169000" />
+    </task>
+    <task id="LOCAL-00001" summary="Restricting how PCIe is meant to be specified,&#10;created a functional CPU specs, insertToConnector() now respond to different components based on which is passed and act upon it.">
+      <created>1600134792678</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600134792678</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="Restructing how PCIe is meant to be specified,&#10;created a functional CPU specs, inserToConnector() now respond to different components based on which is passed and act upoon it." />
+    <MESSAGE value="Restricting how PCIe is meant to be specified,&#10;created a functional CPU specs, insertToConnector() now respond to different components based on which is passed and act upon it." />
+    <option name="LAST_COMMIT_MESSAGE" value="Restricting how PCIe is meant to be specified,&#10;created a functional CPU specs, insertToConnector() now respond to different components based on which is passed and act upon it." />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="94" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600126845754">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state x="94" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.994@0.0.1280.994" timestamp="1600126845754" />
+    <state x="420" y="251" key="FileChooserDialogImpl" timestamp="1600126838113">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state x="420" y="251" key="FileChooserDialogImpl/0.0.1280.994@0.0.1280.994" timestamp="1600126838113" />
+    <state width="1259" height="267" key="GridCell.Tab.0.bottom" timestamp="1600135429209">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state width="1259" height="267" key="GridCell.Tab.0.bottom/0.0.1280.994@0.0.1280.994" timestamp="1600135429209" />
+    <state width="1259" height="267" key="GridCell.Tab.0.center" timestamp="1600135429209">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state width="1259" height="267" key="GridCell.Tab.0.center/0.0.1280.994@0.0.1280.994" timestamp="1600135429209" />
+    <state width="1259" height="267" key="GridCell.Tab.0.left" timestamp="1600135429209">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state width="1259" height="267" key="GridCell.Tab.0.left/0.0.1280.994@0.0.1280.994" timestamp="1600135429209" />
+    <state width="1259" height="267" key="GridCell.Tab.0.right" timestamp="1600135429209">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state width="1259" height="267" key="GridCell.Tab.0.right/0.0.1280.994@0.0.1280.994" timestamp="1600135429209" />
+    <state x="141" y="141" key="SettingsEditor" timestamp="1600135416271">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state x="141" y="141" key="SettingsEditor/0.0.1280.994@0.0.1280.994" timestamp="1600135416271" />
+    <state x="232" y="229" key="Vcs.Push.Dialog.v2" timestamp="1600134818047">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state x="232" y="229" key="Vcs.Push.Dialog.v2/0.0.1280.994@0.0.1280.994" timestamp="1600134818047" />
+    <state x="346" y="96" width="587" height="801" key="find.popup" timestamp="1600084454294">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state x="346" y="96" width="587" height="801" key="find.popup/0.0.1280.994@0.0.1280.994" timestamp="1600084454294" />
+    <state x="303" y="213" width="672" height="678" key="search.everywhere.popup" timestamp="1600133756928">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state x="303" y="213" width="672" height="678" key="search.everywhere.popup/0.0.1280.994@0.0.1280.994" timestamp="1600133756928" />
+  </component>
+</project>
