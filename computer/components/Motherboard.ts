@@ -43,15 +43,16 @@ class Motherboard {
     //Onboard Connectors
     CPU: CPU
     GPU: GPU
-    RAM: RAM
-
-
+    RAM_1: RAM
+    RAM_2: RAM
+    RAM_3: RAM
+    RAM_4: RAM
     //Variables
     availableMemory: number
     availableMemorySpeed: number
+    availableMemorySlots: number
 
-
-    constructor(cpuSocket: number, chipset: string, memorySlots: number, memoryMax: number,
+    constructor(cpuSocket: number, chipset: string, memoryMax: number,
                 memorySpeed: number[], memoryType: string, multiGpuSupport: string[],
                 PCIeSlotOne: [Revision: number, speed: number], PCIeSlotTwo: [Revision: number, speed: number], PCIeSlotThree: [Revision: number, speed: number], PCIeSlotsAllActiveRunningSpeed: number[], M2Slots: number, SataSlots: number, SataSpeed: number,
                 lanController: string, lanSpeed: number, secondLanController: string, secondLanSpeed: number,
@@ -60,7 +61,7 @@ class Motherboard {
                 usb32Ports: number, usb31Ports: number, usb30Ports: number, usb20Ports: number) {
         this.cpuSocket = cpuSocket;
         this.chipset = chipset;
-        this.memorySlots = memorySlots || 4;
+        this.memorySlots = 4;
         this.memoryMax = memoryMax || 32;
         this.memorySpeed = memorySpeed;
         this.memoryType = memoryType || "DDR4";
@@ -87,10 +88,10 @@ class Motherboard {
         this.usb20Ports = usb20Ports || 2;
         this.CPU = undefined;
         this.GPU = undefined;
-        this.RAM = undefined;
+        this.availableMemorySlots = 4;
     }
 
-    insertToConnector(ComponentConnector: string, Component: any) {
+    insertToConnector(ComponentConnector: string, Component: any): boolean {
         switch (ComponentConnector) {
             case "CPU":
                 // @ts-ignore
@@ -106,8 +107,12 @@ class Motherboard {
                 //code
                 break;
             case "RAM":
-                //code
-                break;
+                if (this.availableMemorySlots !== 0 && Component.type === this.memoryType) {
+                    this[`RAM_${this.availableMemorySlots}`] = Component;
+                    return true;
+                } else {
+                    throw new Error("Incompatible specs");
+                }
             default:
                 throw new Error("Incompatible component");
         }

@@ -2,10 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Motherboard = void 0;
 class Motherboard {
-    constructor(cpuSocket, chipset, memorySlots, memoryMax, memorySpeed, memoryType, multiGpuSupport, PCIeSlotOne, PCIeSlotTwo, PCIeSlotThree, PCIeSlotsAllActiveRunningSpeed, M2Slots, SataSlots, SataSpeed, lanController, lanSpeed, secondLanController, secondLanSpeed, wirelessController, wirelessSpeed, wirelessFrequency, bluetoothVersion, audioController, usb32Ports, usb31Ports, usb30Ports, usb20Ports) {
+    constructor(cpuSocket, chipset, memoryMax, memorySpeed, memoryType, multiGpuSupport, PCIeSlotOne, PCIeSlotTwo, PCIeSlotThree, PCIeSlotsAllActiveRunningSpeed, M2Slots, SataSlots, SataSpeed, lanController, lanSpeed, secondLanController, secondLanSpeed, wirelessController, wirelessSpeed, wirelessFrequency, bluetoothVersion, audioController, usb32Ports, usb31Ports, usb30Ports, usb20Ports) {
         this.cpuSocket = cpuSocket;
         this.chipset = chipset;
-        this.memorySlots = memorySlots || 4;
+        this.memorySlots = 4;
         this.memoryMax = memoryMax || 32;
         this.memorySpeed = memorySpeed;
         this.memoryType = memoryType || "DDR4";
@@ -32,7 +32,7 @@ class Motherboard {
         this.usb20Ports = usb20Ports || 2;
         this.CPU = undefined;
         this.GPU = undefined;
-        this.RAM = undefined;
+        this.availableMemorySlots = 4;
     }
     insertToConnector(ComponentConnector, Component) {
         switch (ComponentConnector) {
@@ -51,8 +51,12 @@ class Motherboard {
                 //code
                 break;
             case "RAM":
-                //code
-                break;
+                if (this.availableMemorySlots !== 0 && Component.type === this.memoryType) {
+                    this[`RAM_${this.availableMemorySlots}`] = Component;
+                    return true;
+                } else {
+                    throw new Error("Incompatible specs");
+                }
             default:
                 throw new Error("Incompatible component");
         }

@@ -21,6 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0ae91b03-c2d8-432b-8ab0-705b6637d5f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/Motherboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Motherboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/RAM.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/RAM.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Motherboard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Motherboard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/RAM.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/RAM.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +65,7 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.4.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.10.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/build/components/Case.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -86,6 +90,9 @@
       <updated>1600082761742</updated>
       <workItem from="1600082764205" duration="6957000" />
       <workItem from="1600125349975" duration="9169000" />
+      <workItem from="1600135606025" duration="6000" />
+      <workItem from="1600235283317" duration="1247000" />
+      <workItem from="1600249465969" duration="2677000" />
     </task>
     <task id="LOCAL-00001" summary="Restricting how PCIe is meant to be specified,&#10;created a functional CPU specs, insertToConnector() now respond to different components based on which is passed and act upon it.">
       <created>1600134792678</created>
