@@ -21,10 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0ae91b03-c2d8-432b-8ab0-705b6637d5f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/Case.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Case.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/components/Motherboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Motherboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/RAM.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/RAM.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Motherboard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Motherboard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/RAM.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/RAM.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +90,8 @@
       <workItem from="1600125349975" duration="9169000" />
       <workItem from="1600135606025" duration="6000" />
       <workItem from="1600235283317" duration="1247000" />
-      <workItem from="1600249465969" duration="2677000" />
+      <workItem from="1600249465969" duration="3156000" />
+      <workItem from="1601557937994" duration="98000" />
     </task>
     <task id="LOCAL-00001" summary="Restricting how PCIe is meant to be specified,&#10;created a functional CPU specs, insertToConnector() now respond to different components based on which is passed and act upon it.">
       <created>1600134792678</created>
@@ -101,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600134792678</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding RAM component and switching from dynamic ram slots to fixed 4.">
+      <created>1600252591676</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600252591676</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,7 +132,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Restructing how PCIe is meant to be specified,&#10;created a functional CPU specs, inserToConnector() now respond to different components based on which is passed and act upoon it." />
     <MESSAGE value="Restricting how PCIe is meant to be specified,&#10;created a functional CPU specs, insertToConnector() now respond to different components based on which is passed and act upon it." />
-    <option name="LAST_COMMIT_MESSAGE" value="Restricting how PCIe is meant to be specified,&#10;created a functional CPU specs, insertToConnector() now respond to different components based on which is passed and act upon it." />
+    <MESSAGE value="Adding RAM component and switching from dynamic ram slots to fixed 4." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding RAM component and switching from dynamic ram slots to fixed 4." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -136,34 +143,38 @@
       <screen x="0" y="0" width="1280" height="994" />
     </state>
     <state x="94" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.994@0.0.1280.994" timestamp="1600126845754" />
+    <state x="120" y="81" width="1024" height="824" key="DiffContextDialog" timestamp="1601558047163">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state x="120" y="81" width="1024" height="824" key="DiffContextDialog/0.0.1280.994@0.0.1280.994" timestamp="1601558047163" />
     <state x="420" y="251" key="FileChooserDialogImpl" timestamp="1600126838113">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
     <state x="420" y="251" key="FileChooserDialogImpl/0.0.1280.994@0.0.1280.994" timestamp="1600126838113" />
-    <state width="1259" height="267" key="GridCell.Tab.0.bottom" timestamp="1600135429209">
+    <state width="1259" height="267" key="GridCell.Tab.0.bottom" timestamp="1600252582294">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state width="1259" height="267" key="GridCell.Tab.0.bottom/0.0.1280.994@0.0.1280.994" timestamp="1600135429209" />
-    <state width="1259" height="267" key="GridCell.Tab.0.center" timestamp="1600135429209">
+    <state width="1259" height="267" key="GridCell.Tab.0.bottom/0.0.1280.994@0.0.1280.994" timestamp="1600252582294" />
+    <state width="1259" height="267" key="GridCell.Tab.0.center" timestamp="1600252582294">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state width="1259" height="267" key="GridCell.Tab.0.center/0.0.1280.994@0.0.1280.994" timestamp="1600135429209" />
-    <state width="1259" height="267" key="GridCell.Tab.0.left" timestamp="1600135429209">
+    <state width="1259" height="267" key="GridCell.Tab.0.center/0.0.1280.994@0.0.1280.994" timestamp="1600252582294" />
+    <state width="1259" height="267" key="GridCell.Tab.0.left" timestamp="1600252582294">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state width="1259" height="267" key="GridCell.Tab.0.left/0.0.1280.994@0.0.1280.994" timestamp="1600135429209" />
-    <state width="1259" height="267" key="GridCell.Tab.0.right" timestamp="1600135429209">
+    <state width="1259" height="267" key="GridCell.Tab.0.left/0.0.1280.994@0.0.1280.994" timestamp="1600252582294" />
+    <state width="1259" height="267" key="GridCell.Tab.0.right" timestamp="1600252582294">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state width="1259" height="267" key="GridCell.Tab.0.right/0.0.1280.994@0.0.1280.994" timestamp="1600135429209" />
+    <state width="1259" height="267" key="GridCell.Tab.0.right/0.0.1280.994@0.0.1280.994" timestamp="1600252582294" />
     <state x="141" y="141" key="SettingsEditor" timestamp="1600135416271">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
     <state x="141" y="141" key="SettingsEditor/0.0.1280.994@0.0.1280.994" timestamp="1600135416271" />
-    <state x="232" y="229" key="Vcs.Push.Dialog.v2" timestamp="1600134818047">
+    <state x="232" y="229" key="Vcs.Push.Dialog.v2" timestamp="1600252621361">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state x="232" y="229" key="Vcs.Push.Dialog.v2/0.0.1280.994@0.0.1280.994" timestamp="1600134818047" />
+    <state x="232" y="229" key="Vcs.Push.Dialog.v2/0.0.1280.994@0.0.1280.994" timestamp="1600252621361" />
     <state x="346" y="96" width="587" height="801" key="find.popup" timestamp="1600084454294">
       <screen x="0" y="0" width="1280" height="994" />
     </state>

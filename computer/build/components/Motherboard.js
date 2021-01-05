@@ -54,7 +54,8 @@ class Motherboard {
                 if (this.availableMemorySlots !== 0 && Component.type === this.memoryType) {
                     this[`RAM_${this.availableMemorySlots}`] = Component;
                     return true;
-                } else {
+                }
+                else {
                     throw new Error("Incompatible specs");
                 }
             default:

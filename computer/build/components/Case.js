@@ -1,5 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", {value: true});
+Object.defineProperty(exports, "__esModule", { value: true });
 const CPU_1 = require("./CPU");
 const Motherboard_1 = require("./Motherboard");
 const RAM_1 = require("./RAM");
